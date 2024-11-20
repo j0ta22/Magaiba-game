@@ -2,8 +2,8 @@ const billboard = document.getElementById('billboard')
 const announcements = document.getElementById('announcements')
 const winDisplay = document.getElementById('win')
 const lossDisplay = document.getElementById('loss')
-const winPhrases = ['Bananas!!', 'You win', 'Great', 'Wonderful', 'How did you do that!', 'Epic', 'This will be remembered', 'Historic crossing', 'What a dodge!', 'Look at you!', 'Champ', 'BUG-CRUSH', 'Do it. DO IT', 'Viral meme', 'Happy thoughts', 'Win-win']
-const lossPhrases = ['Mashed', 'Guacamoled', 'Banana split', 'Pureed', 'Bugged infested', 'Wasted youth', 'Give up!', 'Look before you cross', 'reaction level: 0', 'Hold the door', 'Over ran', 'Trashed', 'Trailer parked', 'Lost your marbles']
+const winPhrases = ['So nice!!', 'You win', 'Bien gordo!!', 'Proceda', 'How did you do that!', 'MAGAIBA!!', 'So gentle', 'Historic crossing', 'What a lizard!', 'Look at you!', 'Bullish', 'BUG-CRUSH', 'Do it. DO IT', 'Viral meme', 'Happy thoughts', 'Win-win']
+const lossPhrases = ['Mashed', 'Guacamoled', 'Bearish', 'Pureed', 'Bugged infested', 'Wasted youth', 'Give up!', 'Usted se tiene que arrepentir', 'reaction level: 0', 'Hold the door', 'Over ran', 'Trashed', 'Trailer parked', 'Lost your marbles']
 
 // ********** Enemy
 let Enemy = function(x, y, speed) {
@@ -138,14 +138,14 @@ Player.prototype.handleWin = function() {
 
 Player.prototype.nextLevel = function() {
     let wins = winDisplay.innerText
-    if (wins === '1') announcements.innerText = 'Level: 1. Gentle stroll'
-    if (wins === '5') announcements.innerText = 'Level: 2. Morning rush'
-    if (wins === '10') announcements.innerText = 'Level: 3. Quick dash'
-    if (wins === '15') announcements.innerText = 'Level: 4. Run for it'
-    if (wins === '20') announcements.innerText = 'Level: 5. Cross fit'
-    if (wins === '25') announcements.innerText = 'Level: 6. Cross trial, and error'
-    if (wins === '30') announcements.innerText = 'Level: 7. Hit and run'
-    if (wins === '35') announcements.innerText = 'Level: 8. Insane mode UNLOCKED'
+    if (wins === '1') announcements.innerText = 'Level 1. Gentle'
+    if (wins === '5') announcements.innerText = 'Level 2. So nice'
+    if (wins === '10') announcements.innerText = 'Level 3. Turn the rabbit'
+    if (wins === '15') announcements.innerText = 'Level 4. Proceda'
+    if (wins === '20') announcements.innerText = 'Level 5. Fomo time'
+    if (wins === '25') announcements.innerText = 'Level 6. Bullish'
+    if (wins === '30') announcements.innerText = 'Level 7. Hit and run'
+    if (wins === '35') announcements.innerText = 'Level 8. Bullrun mode UNLOCKED'
 }
 
 Player.prototype.handleInput = function(keyPress) {
